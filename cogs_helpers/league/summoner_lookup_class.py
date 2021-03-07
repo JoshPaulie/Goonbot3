@@ -3,13 +3,13 @@ from pprint import pprint
 import arrow
 from cassiopeia import Queue
 from collections import defaultdict
-from cogs_helpers.league.calculators import *
+from cogs_helpers.league.calculators import win_ratio
 from extra_tools import fstat
 
 
 def get_games_played(item):
-    name, stats = item
-    return stats["games_played"]
+    # name, stats = item
+    return item[1]["games_played"]
 
 
 class SummonerLookupAnalysis:

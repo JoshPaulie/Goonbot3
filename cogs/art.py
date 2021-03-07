@@ -70,7 +70,10 @@ class Art(commands.Cog, name="Art! 🎨"):
     @commands.command(name="frog", aliases=["foot"])
     async def frog(self, ctx):
         """Fantasy Frog Fetish"""
-        image = ["https://i.imgur.com/lqZM3sR.png"]
+        image = [
+            "https://i.imgur.com/lqZM3sR.png",
+            "https://cdn.discordapp.com/attachments/177125557954281472/814729226031726632/1614310329958.jpg",
+        ]
         await make_art_embed(ctx, image)
 
     @commands.command(name="soy")
@@ -142,6 +145,10 @@ class Art(commands.Cog, name="Art! 🎨"):
             "https://cdn.discordapp.com/attachments/177125557954281472/814295259558707250/1614017519563.jpg",
             "https://cdn.discordapp.com/attachments/177125557954281472/814191917611876382/1614137309138.jpg",
             "https://cdn.discordapp.com/attachments/177125557954281472/811531265504837672/1611705215429.png",
+            "https://cdn.discordapp.com/attachments/177125557954281472/817796408034852874/1615045778199.png",
+            "https://cdn.discordapp.com/attachments/177125557954281472/817796396031279124/1615045524249.png",
+            "https://cdn.discordapp.com/attachments/177125557954281472/817642770297782282/1614997769621.png",
+            "https://cdn.discordapp.com/attachments/188013306341097472/817636974986919956/1615010071942.jpg",
         ]
         await make_art_embed(ctx, image)
 

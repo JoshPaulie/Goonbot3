@@ -6,6 +6,7 @@ from tqdm import tqdm
 from motor import motor_asyncio
 from discord.ext import commands
 from config import BotConfig
+from datetime import datetime
 
 intents = discord.Intents(messages=True, guilds=True, reactions=True)
 bot = commands.Bot(
@@ -52,12 +53,12 @@ async def on_message(message):
 @bot.event
 async def on_command(ctx):
     """Prints commands to PSEUDO console"""
-    if ctx.author.id != BotConfig.GoonIDs.josh_paulie:
-        message = ctx.message
-        content = message.content
-        goon = message.author.name
-
-        print(BotConfig.pipe.join(["[CI]", goon, content]))
+    # if ctx.author.id != BotConfig.GoonIDs.josh_paulie:
+    message = ctx.message
+    content = message.content
+    goon = message.author.name
+    now = datetime.now().strftime('%a %I:%M')
+    print(BotConfig.pipe.join([f"{now}", goon, content]))
 
 
 """ 🤖🧠 """
