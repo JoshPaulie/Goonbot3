@@ -1,0 +1,21 @@
+
+# Files & .files 🔒
+## Spammy
+pyvenv.cfg
+datetime_test.py
+*.pyc
+## Sensitive
+config.py
+cogs_helpers/league/cass_pipeline.json
+
+# Folders 📂
+## Spammy
+/__pycache__/
+/bin
+/lib
+/disk_storage
+## Sensitive
+/dev_meta
+cogs_helpers/hobo_usernames/base_usernames.txt
+cogs_helpers/league/names/goon_summoner_names.txt
+cogs_helpers/countdown/special_dates.py
