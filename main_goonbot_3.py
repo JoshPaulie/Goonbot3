@@ -1,12 +1,13 @@
+from datetime import datetime
 from pathlib import Path
 
-import discord
 import arrow
-from tqdm import tqdm
-from motor import motor_asyncio
+import discord
 from discord.ext import commands
+from motor import motor_asyncio
+from tqdm import tqdm
+
 from config import BotConfig
-from datetime import datetime
 
 intents = discord.Intents(messages=True, guilds=True, reactions=True)
 bot = commands.Bot(
@@ -57,7 +58,7 @@ async def on_command(ctx):
     message = ctx.message
     content = message.content
     goon = message.author.name
-    now = datetime.now().strftime('%a %I:%M')
+    now = datetime.now().strftime("%a %I:%M")
     print(BotConfig.pipe.join([f"{now}", goon, content]))
 
 

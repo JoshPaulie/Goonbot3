@@ -44,7 +44,7 @@ class GeneralCommands(commands.Cog, name="General Commands 🤖"):
 
     @commands.command(name="todo")
     async def todo(self, ctx):
-        """Replies wit current todo list"""
+        """Replies with current todo list"""
         with open("dev_meta/todo.txt") as todo_list:
             todo_list = todo_list.read()
         await ctx.send(embed=bot_says("To-do list", todo_list, multi_line=True))

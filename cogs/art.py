@@ -127,7 +127,7 @@ class Art(commands.Cog, name="Art! 🎨"):
         image = "https://media1.tenor.com/images/c071dcb215cc774f730c1630a5971fb4/tenor.gif?itemid=12340096"
         await make_art_embed(ctx, image)
 
-    #
+    # TODO MAKE THIS INTO MEMORY THING, WITH LISTS, LOL.
     @commands.command(name="rat")
     async def rat(self, ctx):
         """Anti-Mice Movement© logo """
@@ -149,6 +149,17 @@ class Art(commands.Cog, name="Art! 🎨"):
             "https://cdn.discordapp.com/attachments/177125557954281472/817796396031279124/1615045524249.png",
             "https://cdn.discordapp.com/attachments/177125557954281472/817642770297782282/1614997769621.png",
             "https://cdn.discordapp.com/attachments/188013306341097472/817636974986919956/1615010071942.jpg",
+            "https://cdn.discordapp.com/attachments/177125557954281472/818222793833447424/1614666338169.jpg",
+            "https://cdn.discordapp.com/attachments/177125557954281472/818269040752721990/1615160882234.jpg",
+            "https://cdn.discordapp.com/attachments/177125557954281472/818354363432697906/1615180279733.jpg",
+            "https://cdn.discordapp.com/attachments/177125557954281472/818354519292379136/1615180297119.jpg",
+            "https://cdn.discordapp.com/attachments/177125557954281472/818355946404315156/1615180781957.jpg",
+            "https://cdn.discordapp.com/attachments/177125557954281472/818880317586669648/1615216485255.png",
+            "https://cdn.discordapp.com/attachments/177125557954281472/818882116716331108/1615225140624.jpg",
+            "https://cdn.discordapp.com/attachments/177125557954281472/819430297875251240/1615316816961.jpg",
+            "https://cdn.discordapp.com/attachments/177125557954281472/820578117570789376/1615558934911.jpg",
+            "https://cdn.discordapp.com/attachments/177125557954281472/820578133014347776/1615563118327.jpg",
+            "https://cdn.discordapp.com/attachments/177125557954281472/820578166270853140/1615559636133.png",
         ]
         await make_art_embed(ctx, image)
 

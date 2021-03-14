@@ -17,7 +17,7 @@ class ListenersEvents(commands.Cog):
 
         for reaction in reactions:
             if reaction.emoji == "🚮":
-                if reaction.count == 5:
+                if reaction.count == 3:
                     await channel.send(
                         embed=bot_says(
                             "By community vote, a message was deleted",
